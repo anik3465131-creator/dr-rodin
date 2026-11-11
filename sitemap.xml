@@ -1,65 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://dr-rodin.ru/</loc>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>https://dr-rodin.ru/sitemap-pages.xml</loc>
     <lastmod>2026-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/reviews</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://dr-rodin.ru/sitemap-images.xml</loc>
     <lastmod>2026-11-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/smile</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <image:image>
-      <image:loc>https://dr-rodin.ru/images/smile-rezultat-1-900.webp</image:loc>
-      <image:title>Результаты до и после ReLEx SMILE: −6,00 и −8,00 D → −0,25 D</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://dr-rodin.ru/images/smile-rezultat-2-900.webp</image:loc>
-      <image:title>Результаты до и после ReLEx SMILE: −3,00 и −1,50 D → +0,25 D</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-1</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-2</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-3</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-4</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-5</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dr-rodin.ru/article-6</loc>
-    <lastmod>2026-11-11</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-</urlset>
+  </sitemap>
+</sitemapindex>

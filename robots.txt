@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /_ref/
+Disallow: /404
 
 Sitemap: https://dr-rodin.ru/sitemap.xml
+Sitemap: https://dr-rodin.ru/sitemap-pages.xml
+Sitemap: https://dr-rodin.ru/sitemap-images.xml

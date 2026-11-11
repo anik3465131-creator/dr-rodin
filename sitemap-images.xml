@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://dr-rodin.ru/</loc>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/doctor.webp</image:loc>
+      <image:title>Александр Сергеевич Родин — лазерный офтальмохирург, клиника «Спектр», Москва</image:title>
+      <image:caption>Хирург ReLEx SMILE с российской и канадской подготовкой, опыт более 20 лет</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/1-mesto.jpg</image:loc>
+      <image:title>Диплом премии «Продокторов» — 1 место, 2025</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/clinic.webp</image:loc>
+      <image:title>Клиника «Спектр» в Москве — место проведения операций ReLEx SMILE</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/certificate-zeiss.jpg</image:loc>
+      <image:title>Сертификат ZEISS — хирург ReLEx SMILE на лазере VisuMax</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/certificate-uoft.jpg</image:loc>
+      <image:title>Сертификат University of Toronto — зарубежная подготовка хирурга</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://dr-rodin.ru/smile</loc>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/smile-rezultat-1-900.webp</image:loc>
+      <image:title>Результаты до и после ReLEx SMILE: −6,00 и −8,00 D → −0,25 D</image:title>
+      <image:caption>Данные авторефрактометрии пациента до и после операции SMILE</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/smile-rezultat-2-900.webp</image:loc>
+      <image:title>Результаты до и после ReLEx SMILE: −3,00 и −1,50 D → +0,25 D</image:title>
+      <image:caption>Данные авторефрактометрии пациента до и после операции SMILE</image:caption>
+    </image:image>
+  </url>
+</urlset>
