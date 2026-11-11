@@ -1,0 +1,2 @@
+# www -> без www (основной адрес — https://dr-rodin.ru)
+https://www.dr-rodin.ru/* https://dr-rodin.ru/:splat 301
