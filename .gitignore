@@ -10,3 +10,8 @@ _ref/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# wrangler
+.wrangler/
+.dev.vars*
+.env*
