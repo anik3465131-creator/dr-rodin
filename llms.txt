@@ -12,17 +12,17 @@
 
 ## Ключевые страницы
 - [Главная](https://dr-rodin.ru/): врач, метод SMILE, статьи, отзывы, контакты.
-- [ReLEx SMILE](https://dr-rodin.ru/smile): что это, кому подходит, как проходит операция, восстановление, результаты до и после.
-- [Отзывы пациентов](https://dr-rodin.ru/reviews): 19 историй после SMILE и FemtoLASIK.
+- [ReLEx SMILE](https://dr-rodin.ru/smile/): что это, кому подходит, как проходит операция, восстановление, результаты до и после.
+- [Отзывы пациентов](https://dr-rodin.ru/reviews/): 19 историй после SMILE и FemtoLASIK.
 
 ## Статьи
-- [SMILE: что это и чем отличается от LASIK](https://dr-rodin.ru/article-1)
-- [Как проходит операция ReLEx SMILE](https://dr-rodin.ru/article-2)
-- [ReLEx SMILE в Москве: где сделать операцию](https://dr-rodin.ru/article-3)
-- [SMILE или Femto-LASIK: сравнение методов](https://dr-rodin.ru/article-4)
-- [Восстановление после ReLEx SMILE](https://dr-rodin.ru/article-5)
-- [Противопоказания к ReLEx SMILE](https://dr-rodin.ru/article-6)
-- [Сколько стоит коррекция зрения и почему она не может быть дешёвой](https://dr-rodin.ru/article-7)
+- [SMILE: что это и чем отличается от LASIK](https://dr-rodin.ru/article-1/)
+- [Как проходит операция ReLEx SMILE](https://dr-rodin.ru/article-2/)
+- [ReLEx SMILE в Москве: где сделать операцию](https://dr-rodin.ru/article-3/)
+- [SMILE или Femto-LASIK: сравнение методов](https://dr-rodin.ru/article-4/)
+- [Восстановление после ReLEx SMILE](https://dr-rodin.ru/article-5/)
+- [Противопоказания к ReLEx SMILE](https://dr-rodin.ru/article-6/)
+- [Сколько стоит коррекция зрения и почему она не может быть дешёвой](https://dr-rodin.ru/article-7/)
 
 ## Факты о методе
 - SMILE — фемтосекундная лентикулярная экстракция: лазер VisuMax формирует в роговице микролинзу, которая удаляется через разрез менее 3 мм.
