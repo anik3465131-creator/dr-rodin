@@ -1,23 +1,25 @@
 # dr-rodin.ru
 
-Статический сайт. Хостинг — Cloudflare Pages (бесплатный план), исходники — приватный репозиторий GitHub, домен — Reg.ru.
+Статический сайт. Хостинг — GitHub Pages (бесплатно), исходники — публичный репозиторий GitHub, домен — Reg.ru.
 
 ## Структура
 
 ```
 index.html            главная
-reviews.html          отзывы
-smile.html            ReLEx SMILE
-article-1..6.html     статьи
-404.html              страница ошибки (Pages отдаёт её автоматически)
+reviews/index.html    отзывы            → /reviews/
+smile/index.html      ReLEx SMILE       → /smile/
+article-N/index.html  статьи            → /article-N/
+404.html              страница ошибки
+CNAME                 кастомный домен для GitHub Pages
 css/style.css
 js/main.js
 js/metrika.js         счётчик Яндекс.Метрики (вписать METRIKA_ID)
 images/               картинки и постеры видео
-_headers              заголовки кеша и безопасности (Cloudflare Pages)
-_redirects            редирект www -> без www
-robots.txt, sitemap.xml
+robots.txt, sitemap.xml, sitemap-pages.xml, sitemap-images.xml
 ```
+
+Страницы лежат в папках, чтобы адреса оставались без `.html` (GitHub Pages
+не умеет отдавать `/smile` из файла `smile.html`).
 
 ## Обновление сайта
 
@@ -27,16 +29,30 @@ git commit -m "что изменилось"
 git push
 ```
 
-Cloudflare сам пересоберёт сайт за ~30 секунд.
+GitHub сам пересоберёт сайт за ~30–60 секунд.
 
-## Настройки проекта в Cloudflare Pages
+## Настройки в GitHub
 
-- Framework preset: **None**
-- Build command: *(пусто)*
-- Build output directory: `/`
-- Production branch: `main`
+- Settings → Pages → Source: **Deploy from a branch**, ветка `main`, папка `/ (root)`
+- Custom domain: `dr-rodin.ru` (лежит в файле `CNAME`), Enforce HTTPS — включено
 
 ## Домен
 
-Основной адрес: `https://dr-rodin.ru` (без www). `www.dr-rodin.ru` редиректится на него через `_redirects`.
-DNS домена обслуживается Cloudflare, NS прописаны в панели Reg.ru.
+Основной адрес: `https://dr-rodin.ru` (без www), `www.dr-rodin.ru` — CNAME на
+`anik3465131-creator.github.io`.
+
+DNS-серверы домена (прописаны в панели Reg.ru): `ns1.reg.ru`, `ns2.reg.ru`.
+
+Записи в зоне Reg.ru:
+
+| Тип   | Subdomain | Значение                    |
+|-------|-----------|-----------------------------|
+| A     | @         | 185.199.108.153             |
+| A     | @         | 185.199.109.153             |
+| A     | @         | 185.199.110.153             |
+| A     | @         | 185.199.111.153             |
+| CNAME | www       | anik3465131-creator.github.io |
+
+## Файлы Cloudflare Pages (больше не используются)
+
+`_headers` и `_redirects` остались от прежнего хостинга, GitHub Pages их игнорирует.
