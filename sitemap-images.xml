@@ -24,6 +24,11 @@
       <image:loc>https://dr-rodin.ru/images/certificate-uoft.jpg</image:loc>
       <image:title>Сертификат University of Toronto — зарубежная подготовка хирурга</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://dr-rodin.ru/images/certificate-waterloo.jpg</image:loc>
+      <image:title>Сертификат University of Waterloo — офисная лазерная и малая хирургия для оптометристов, 2026</image:title>
+      <image:caption>Advanced Procedures Certificate Course, 36.5 continuing education hours, экзамен сдан 11 мая 2026 года</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://dr-rodin.ru/smile</loc>

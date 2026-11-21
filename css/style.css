@@ -876,7 +876,6 @@ button { font-family: inherit; }
   padding: 17px 20px;
   background: var(--bg-soft);
 }
-.about-facts div:last-child { grid-column: span 2; }
 .about-facts span {
   font-family: var(--serif);
   font-size: 16px;
@@ -910,6 +909,124 @@ button { font-family: inherit; }
   transition: border-color .25s ease, color .25s ease;
 }
 .chips li:hover { border-color: var(--accent); color: var(--accent); }
+
+/* featured credential */
+
+.credential {
+  display: grid;
+  grid-template-columns: minmax(0, 1.06fr) minmax(0, .94fr);
+  gap: clamp(26px, 4vw, 54px);
+  align-items: center;
+  margin-top: clamp(54px, 7vw, 88px);
+  padding: clamp(16px, 2vw, 24px);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: var(--white);
+  box-shadow: 0 24px 60px rgba(17, 31, 57, .06);
+}
+.credential-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #f6f8fc;
+  box-shadow: 0 14px 34px rgba(17, 31, 57, .12);
+}
+.credential-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform .6s var(--ease);
+}
+.credential-media:hover img { transform: scale(1.02); }
+.credential-zoom {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .92);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .3s ease, transform .3s var(--ease);
+}
+.credential-media:hover .credential-zoom,
+.credential-media:focus-visible .credential-zoom { opacity: 1; transform: none; }
+
+.credential-body { padding: 4px clamp(2px, 1vw, 10px) 4px 0; }
+.credential-kicker {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.credential-dot {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(31, 85, 214, .12);
+}
+.credential-body h3 {
+  margin: 0;
+  font-size: clamp(21px, 2.2vw, 29px);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -.02em;
+}
+.credential-course {
+  margin: 10px 0 0;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--accent);
+}
+.credential-text {
+  max-width: 46ch;
+  margin: 14px 0 0;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.credential-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin: 18px 0;
+  padding: 16px 0 0;
+  border-top: 1px solid var(--line-soft);
+  list-style: none;
+}
+.credential-facts li { display: flex; flex-direction: column; gap: 3px; }
+.credential-facts strong {
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.02em;
+  color: var(--ink);
+}
+.credential-facts span {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 
 /* international experience video */
 
@@ -1320,38 +1437,41 @@ button { font-family: inherit; }
 
 .cert-note {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 14px;
   margin: 0;
-  padding: 14px 18px;
-  border-radius: 18px;
+  padding: 14px;
+  border-radius: 22px;
   background: var(--surface);
 }
 .cert-note-media {
-  width: 118px;
+  display: block;
+  width: 100%;
   flex: none;
-  padding: 5px;
+  padding: 8px;
   background: #fff;
-  border-radius: 8px;
-  transform: rotate(-3deg);
-  transition: transform .45s var(--ease);
+  border-radius: 14px;
+  box-shadow: 0 16px 34px rgba(17, 31, 57, .12);
+  transform: rotate(-1.5deg);
+  transition: transform .45s var(--ease), box-shadow .45s ease;
   will-change: transform;
 }
-.cert-note-media img { display: block; width: 100%; border-radius: 4px; }
-.cert-note figcaption { display: flex; flex-direction: column; gap: 3px; }
+.cert-note-media img { display: block; width: 100%; border-radius: 7px; }
+.cert-note figcaption { display: flex; flex-direction: column; gap: 4px; padding: 0 6px 4px; }
 .cert-note-label {
-  font-size: 9px;
+  font-size: 9.5px;
   font-weight: 700;
   letter-spacing: .16em;
   text-transform: uppercase;
   color: var(--accent);
 }
 .cert-note figcaption strong {
-  font-size: 15.5px;
+  font-size: 19px;
   font-weight: 600;
   letter-spacing: -.01em;
 }
-.cert-note-date { font-size: 11.5px; color: var(--muted); }
+.cert-note-date { font-size: 12px; color: var(--muted); }
 
 .smile-stats {
   display: grid;
@@ -1719,6 +1839,8 @@ a.review-name:hover { color: var(--accent); }
   -webkit-line-clamp: unset;
   -webkit-box-orient: initial;
 }
+
+.reviews-more { margin: 26px 0 0; text-align: center; }
 
 /* =========================================================
    FAQ
@@ -2886,7 +3008,9 @@ body.video-open { overflow: hidden; }
   .about-cert figcaption { font-size: 7px; }
   .about-lead { font-size: 20px; }
   .about-facts { grid-template-columns: 1fr; }
-  .about-facts div:last-child { grid-column: auto; }
+
+  .credential { grid-template-columns: 1fr; gap: 24px; margin-top: 52px; padding: 14px; }
+  .credential-body { padding: 2px 4px 8px; }
 
   .about-video { grid-template-columns: 1fr; gap: 28px; margin-top: 56px; padding: 16px; border-radius: 24px; }
   .about-video-media { width: min(100%, 430px); justify-self: center; border-radius: 16px; }
@@ -2905,8 +3029,8 @@ body.video-open { overflow: hidden; }
   .procedure-head { flex-wrap: wrap; gap: 8px; }
   .step { padding: 13px 12px; }
   .cert-note { padding: 12px; gap: 13px; }
-  .cert-note-media { width: 96px; }
-  .cert-note figcaption strong { font-size: 14px; }
+  .cert-note-media { width: 100%; }
+  .cert-note figcaption strong { font-size: 17px; }
   .smile-stats { grid-template-columns: 1fr 1fr; gap: 24px 18px; }
   .smile-stats strong { font-size: 42px; }
 
